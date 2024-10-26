@@ -1,17 +1,19 @@
 /* 共通 css */
 :root {
-    --main-bg-color: ;
-    --sub-bg-color: ;
-    --font-color: ;
-    --border-color: ;
+    --main-bg-color: #FFFFFF;
+    --sub-bg-color: #ECEBEB;
+    --main-font-color: #333333;
+    --sub-font-color: #FFFFFF;
+    --border-color: #C3C3C3;
+    --button-color: #4B4B4B;
 }
 * {
     box-sizing: border-box;
-    color: ;
+    color: var(--main-font-color);
 }
 body {
-    /* https://ics.media/entry/200317/#各osのフォント指定はどれがいいか */
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
     margin: unset;
 }
 img {
@@ -22,36 +24,40 @@ h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
     padding: unset;
 }
 h2 {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-weight: bold;
+    font-size: 16px;
+}
+p, th, td {
+    font-size: 12px;
+    /* line-height: 190%; */
 }
 a, a:visited {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    text-decoration: none;
+}
+li {
+    font-size: 12px;
+    line-height: 116%;
     text-decoration: none;
 }
 p.copy {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-size: 10px;
 }
 div.container {
-    max-width: px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+div.inner_container {
+    max-width: 800px;
     margin: 0 auto;
 }
 
+
+
 /* 狭い画面向けの既定の CSS レイアウト値 */
 
-@media (min-width: 480px) {
-  /* 中型の画面向けの CSS */
-}
 
-@media (min-width: 800px) {
+
+
+@media (min-width: 896px) {
   /* 広い画面向けの CSS */
-}
-
-@media (min-width: 1100px) {
-  /* 本当に広い画面向けの CSS */
 }
