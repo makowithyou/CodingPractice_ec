@@ -19,7 +19,7 @@ body {
 img {
     display: block;
 }
-h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+h1, h2, p, ul {
     margin: unset;
     padding: unset;
 }
@@ -29,7 +29,6 @@ h2 {
 }
 p, th, td {
     font-size: 12px;
-    /* line-height: 190%; */
 }
 a, a:visited {
     text-decoration: none;
@@ -38,6 +37,7 @@ li {
     font-size: 12px;
     line-height: 116%;
     text-decoration: none;
+    list-style: none;
 }
 p.copy {
     font-size: 10px;
@@ -51,9 +51,31 @@ div.inner_container {
     margin: 0 auto;
 }
 
+@media (min-width: 375px) {
+    main {
+        background-color: red;
+    }
+}
 
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
+img.logo {
+    width: 109px;
+    height: 19px;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    padding: 0 19px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+ul {
+    display: flex;
+}
+p.item_text {
+    line-height: 190%;
+}
 
 
 
