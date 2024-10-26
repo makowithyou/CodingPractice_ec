@@ -27,8 +27,9 @@ h2 {
     font-weight: bold;
     font-size: 16px;
 }
-p, th, td {
+p, th, td, button {
     font-size: 12px;
+    font-weight: normal;
 }
 a, a:visited {
     text-decoration: none;
@@ -51,14 +52,14 @@ div.inner_container {
     margin: 0 auto;
 }
 
-@media (min-width: 375px) {
-    main {
-        background-color: red;
-    }
-}
 
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
+h1 {
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 26px;
+}
 img.logo {
     width: 109px;
     height: 19px;
@@ -66,17 +67,81 @@ img.logo {
 }
 nav {
     display: flex;
-    padding: 0 19px;
+    padding-right: 19px;
+    padding-bottom: 16px;
+    padding-left: 19px;
     overflow-x: scroll;
     scrollbar-width: none;
 }
 ul {
     display: flex;
 }
+li {
+    padding-right: 14px;
+}
+ul.login li:last-of-type {
+    padding-right: unset;
+}
+main img {
+    width: 100%;
+}
+main img + div {
+    padding: 0 16px;
+}
+h2 {
+    margin: 10px 0;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
 p.item_text {
     line-height: 190%;
+    margin: 20px 0;
 }
-
+p.item_cost {
+    margin: 30px 0;
+}
+form {
+    display: flex;
+    margin: 30px 0;
+    flex-direction: column;
+    align-items: stretch;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px 0;
+    text-align: center;
+}
+button {
+    border: unset;
+    background-color: var(--button-color);
+    color: var(--sub-font-color);
+    padding: 18px 0;
+}
+table.form {
+    margin-bottom: 20px;
+}
+table.form tr:not(:last-of-type) {
+    border-bottom: 1px solid var(--border-color);
+}
+table.form td:not(:last-of-type) {
+    border-right: 1px solid var(--border-color);
+}
+table.size th{
+    background-color: var(--sub-bg-color);
+    border: 1px solid var(--border-color);
+}
+table.size td {
+    border: 1px solid var(--border-color);
+}
+p.copy {
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
 
 
 
