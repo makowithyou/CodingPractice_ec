@@ -15,7 +15,7 @@
     <div class="container">
         <header>
             <h1>
-                <img class="logo" src="https://lh3.googleusercontent.com/d/1ncXIFGq0Ayav86b6_0XXoj-mDQmC-tsE" alt="logo">
+                <a href="https://makowithyou.github.io/CodingPractice_ec/"><img class="logo" src="https://lh3.googleusercontent.com/d/1ncXIFGq0Ayav86b6_0XXoj-mDQmC-tsE" alt="logo"></a>
             </h1>
             <nav>
                 <ul>
@@ -26,7 +26,7 @@
                     <li><a href="https://makowithyou.github.io/CodingPractice_ec/">LOOKBOOK</a></li>
                     <li><a href="https://makowithyou.github.io/CodingPractice_ec/">BLOG</a></li>
                 </ul>
-                <ul>
+                <ul class="login">
                     <li><a href="https://makowithyou.github.io/CodingPractice_ec/">LOGIN</a></li>
                     <li><a href="https://makowithyou.github.io/CodingPractice_ec/">CONTACT</a></li>
                 </ul>
@@ -40,14 +40,14 @@
                     <p class="item_text">
                         テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                     </p>
-                    <p>￥9,999 +tax</p>
+                    <p class="item_cost">￥9,999 +tax</p>
                     <form>
-                        <table>
+                        <table class="form">
                             <thead>
                                 <tr>
-                                    <th>Color</th>
-                                    <th>Size</th>
-                                    <th></th>
+                                    <th scope="col">Color</th>
+                                    <th scope="col">Size</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -70,30 +70,30 @@
                         </table>
                         <button type="button">ADD TO CART</button>
                     </form>
-                    <table>
+                    <table class="size">
                         <thead>
                             <tr>
-                                <th>Size</th>
-                                <th>Chest</th>
-                                <th>Weist</th>
-                                <th>Heigt</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Chest</th>
+                                <th scope="col">Weist</th>
+                                <th scope="col">Heigt</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <th>S</th>
+                                <th scope="row">S</th>
                                 <td>99~99</td>
                                 <td>99~99</td>
                                 <td>99~99</td>
                             </tr>
                             <tr>
-                                <th>M</th>
+                                <th scope="row">M</th>
                                 <td>99~99</td>
                                 <td>99~99</td>
                                 <td>99~99</td>
                             </tr>
                             <tr>
-                                <th>L</th>
+                                <th scope="row">L</th>
                                 <td>99~99</td>
                                 <td>99~99</td>
                                 <td>99~99</td>
@@ -104,7 +104,7 @@
             </div>
         </main>
         <footer>
-            <p class="copy">&copy; </p>
+            <p class="copy">&copy; TOTALLY</p>
         </footer>
     </div>
 </body>
