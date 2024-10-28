@@ -178,7 +178,7 @@ main div.inner_container {
 }
 main img {
     width: 400px;
-    padding-right: 60px;
+    margin-right: 60px;
 }
 main img + div {
     padding: unset;
