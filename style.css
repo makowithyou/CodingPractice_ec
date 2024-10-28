@@ -177,13 +177,10 @@ main div.inner_container {
     align-items: flex-start;
 }
 main img {
-    width: 50%;
-    padding-right: 30px;
-    object-fit: cover;
+    width: 400px;
+    padding-right: 60px;
 }
 main img + div {
-    width: 50%;
     padding: unset;
-    padding-left: 30px;
 }
 }
